@@ -17,12 +17,15 @@ public class Main{
         }
 
         //버블정렬
-        int[] temp;
-        int index1;
-        int index2;
-
-        for(int i=0; i < input-1; i++){
-
+        int temp;
+        for(int i = 0; i < input-1; i++){
+            for(int j = input - 1; j > i; j--){
+                if(arr[j - 1]>arr[j]){
+                    temp = arr[j-1];
+                    arr[j-1] = arr[j];
+                    arr[j] = temp;
+                }
+            }
         }
 
         // 정렬된 배열 출력
