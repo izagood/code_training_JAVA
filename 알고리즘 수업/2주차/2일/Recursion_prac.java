@@ -1,5 +1,7 @@
 package week02.d1.ch3;
 
+import java.util.stream.LongStream;
+
 public class Recursion {
 
     int RecFunc(int num){
@@ -27,6 +29,8 @@ public class Recursion {
         Recursion rc = new Recursion();
 
         System.out.println("1부터 5까지의 합은 : " + rc.RecFunc(5));
+        Long result = LongStream.rangeClosed(1, 5).reduce((long x, long y) -> x + y).getAsLong();
+        System.out.println(result);
 
     }
 }
