@@ -18,17 +18,17 @@ public class HashTable {
         String code = sc.next();
         System.out.printf("%s : %s \n", code, map.get(code));
 
-        System.out.println("------키 와 값을 출-----------");
+        System.out.println("------키 와 값을 출력_1-----------");
         for(String s : map.keySet()){
             System.out.printf("%s : %s \n", s, map.get(s));
 
         }
-        System.out.println("-------값만 출력----------");
+        System.out.println("-------값 만 출력----------");
         for(String s : map.values()){
             System.out.printf("%s \n", s);
 
         }
-        System.out.println("-------모두 출력----------");
+        System.out.println("-------키 와 값을 출력_2----------");
         for(Map.Entry<String, String> entry : map.entrySet()) {
             System.out.printf("%s : %s \n", entry.getKey(), entry.getValue());
         }
