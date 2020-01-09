@@ -8,6 +8,13 @@ public class Student {
     private String dept;
     private List<Integer> sungjuk;
 
+    public Student(String id, String name, String dept, List<Integer> sungjuk) {
+        this.id = id;
+        this.name = name;
+        this.dept = dept;
+        this.sungjuk = sungjuk;
+    }
+
     //getter, setter를 이용해 접근
 
     public String getId() {
