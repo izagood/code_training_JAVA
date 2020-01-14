@@ -45,9 +45,7 @@ public class BFS {
                     queue.add(n);
                 }
             }
-
         }
-
     }
 
     public static void main(String[] args) {
@@ -56,14 +54,9 @@ public class BFS {
 
         app.addEdge(0,1);
         app.addEdge(0,2);
-
-
         app.addEdge(2,3);
-
         app.addEdge(3,3);
-
+        
         app.BFS_start(2);
-
     }
-
 }
