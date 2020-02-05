@@ -19,14 +19,14 @@ public class GbbGame {
             System.out.println();
         	System.out.print("철수 >> ");
         	p1 = sc.next();
-        	if(!(p1.equals(s) || p1.contentEquals(r) || p1.contentEquals(b))) {
+        	if(!(p1.equals(s) || p1.equals(r) || p1.equals(b))) {
         	    System.out.println("다시 입력하세요.");
         	    System.out.print("철수 >> ");
         	    p1 = sc.next();
         	}
         	System.out.print("영희 >> ");
         	p2 = sc.next();
-        	if(!(p2.equals(s) || p2.contentEquals(r) || p2.contentEquals(b))) {
+        	if(!(p2.equals(s) || p2.equals(r) || p2.equals(b))) {
         	    System.out.println("다시 입력하세요.");
         	    System.out.print("영희 >> ");
         	    p2 = sc.next();
