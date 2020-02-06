@@ -46,9 +46,9 @@ public , default, protected, public 모두 사용 가능
 
 ## 상속
 
-public class Person{}
+public class Person{ int age; }
 
-public class Student *extends* Person{}
+public class Student **extends** Person{ String name; }
 
 
 
