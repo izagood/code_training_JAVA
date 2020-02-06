@@ -36,6 +36,20 @@ public 과 default 만 사용가능
 
 public , default, protected, public 모두 사용 가능
 
+## final 제한자
+
+클래스, 필드, 메서드 앞에 모두 사용 가능
+
+필드 : 필드 앞에 붙이는 final은 상수( 변수 변경 금지 )
+메서드 : 메서드 앞에 붙이면 메서드 오버로딩 금지( 오버로딩 금지 )
+클래스 : 클래스 앞에 붙이면 클래스르 상속하지 금지( 상속 금지 )
+
+## 상속
+
+public class Person{}
+
+public class Student *extends* Person{}
+
 
 
 
