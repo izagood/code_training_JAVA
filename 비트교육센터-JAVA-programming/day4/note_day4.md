@@ -14,4 +14,29 @@ this()
 
 생성자의 목적은 객체 초기화
 
+## 접근제한자 4종류
+
+### private
+현재의 객체 내에서만 접근 가능
+
+### default( 아무것도 쓰지 않았을 때 적용 )
+현재의 패키지 내에서만 접근 가능
+
+### protected
+default + 다른 패키지에 있는 것도 접근 가능(if 상속관계에 있으면)
+
+### public
+
+
+### 클래스의 헤더
+
+public 과 default 만 사용가능
+
+### 필드, 메서드의 헤더
+
+public , default, protected, public 모두 사용 가능
+
+
+
+
 
