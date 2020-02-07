@@ -59,5 +59,16 @@
 ### super. / super()
 부모 자체를 지칭
 
+## static
+필드, 메서드에 사용 가능
 
+클래스 로더가 메인 메서드를 실행하기 전에 모든 클래스를 스캔하여 메모리에 로딩을 해 놓는다.
+( 모든 클래스, static 필드, static 메서드 )
+
+### example
+    class person{
+        static int sn;
+    }
+    
+    Person.sn = 1;
 
