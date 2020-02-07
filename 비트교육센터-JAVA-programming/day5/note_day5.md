@@ -32,4 +32,4 @@
 2단계 : (int)0.0 <= (int)(Math.random()*10) < (int)10.0
 3단계 : 0 +1 <= (int)(Math.random()*10)+1 < 10 + 1
 
-결국 -> int num = (int)(Math.random()*n)+start
+결국 -> int num = (int)(Math.random()*숫자범위+시작숫자);
