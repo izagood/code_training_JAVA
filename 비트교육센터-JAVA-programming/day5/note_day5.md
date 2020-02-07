@@ -55,6 +55,9 @@
     class Police extends Person{ study(){} }
     
     class Teacher extends Person{ study(){} }
+    
+### super. / super()
+부모 자체를 지칭
 
 
 
