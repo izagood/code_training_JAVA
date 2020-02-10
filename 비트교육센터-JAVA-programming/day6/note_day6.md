@@ -34,10 +34,12 @@ superclass의 메서드를 추상메서드로 생성하면 subclass에서 꼭 �
 그렇기 때문에 추상 클래스를 사용하기 위해서는 상속하여 사용하여야한다.
 
 ## 인터페이스 interface
+강제적으로 오버라이딩하게 만들기 위해서 사용
+ 
 implements(구현) 로 상속가능
-
+ 
 상수와 추상메서드로만 구성되는 클래스
-
+ 
 일반 메서드 존재 불가능
 일반 필드 존재 불가능
 
@@ -49,4 +51,11 @@ implements(구현) 로 상속가능
         final double PI=3.14;
         abstract void eat();
     }// final과 abstract를 쓰지 않아도 컴파일러가 자동으로 붙여서 컴파일 한다.
-    
+
+## 다중 상속
+Java는 원칙적으로 다중 상속을 사용할 수 없다.
+
+하지만 밑의 example 과 같이 우회하여 다중 상속할 수는 있다.
+### example
+
+    public class Lion extends Animal implements Person, School, ..., interface_name{...}
