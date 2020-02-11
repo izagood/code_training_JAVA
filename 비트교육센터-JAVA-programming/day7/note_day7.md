@@ -48,4 +48,21 @@ Byte, Short, Integer, Long, Character, Float, Double, Boolean
 
 기본 타입의 값을 객체화 해주는 역할
 
+## 컬렉션 클래스
+
+객체만 넣을 수 있다.
+
+## 자동 박싱과 자동 언박싱
+
+Integer 와 int를 사용할 때 자동으로 변환해준다.
+
+원래는 Integer가 들어가야하는 곳에 int 값을 그대로 사용하면 int -> Integer로 변환되어서 들어가는 것임
+
+## Calendear 클래스
+캘린더 클래스는 내장 클래스가 객체를 리턴해준다.
+
+싱글톤?
+
+내부에서 생성해서 객체를 
+
 
