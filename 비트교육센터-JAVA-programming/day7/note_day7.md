@@ -12,3 +12,25 @@
 : 회원, 결제수단(현금, 신용카드), 주문
 
 Person, Payment( Cash, CreditCard ), Order
+
+## 다운 캐스팅
+전제 : 업캐스팅 된 상황에서만 할 수 있다.
+
+    class Person{}
+    
+    class Police extends Person{}
+    
+    Police sub = new Police();
+    Person super;
+    super = sub;
+    super.eat();
+    // super.catch(); // error
+    
+    sub = (Police)super;
+    sub.catch();
+    
+## Java 8 API doc
+
+Package -> All class -> 상속관계 표시( super클래스의 필드와 메서드도 사용 가능 )
+    
+    
