@@ -32,5 +32,20 @@ Person, Payment( Cash, CreditCard ), Order
 ## Java 8 API doc
 
 Package -> All class -> 상속관계 표시( super클래스의 필드와 메서드도 사용 가능 )
-    
-    
+
+## 메서드 체인 기법
+Object obj;
+Class c1 = obj.getClass();
+String s = c1.getName();
+
+=> obj.getClass().getName()
+
+### example
+
+    System.out.println();
+## Wrapper 클래스
+Byte, Short, Integer, Long, Character, Float, Double, Boolean
+
+기본 타입의 값을 객체화 해주는 역할
+
+
