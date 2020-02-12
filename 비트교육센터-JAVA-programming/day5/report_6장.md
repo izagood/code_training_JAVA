@@ -118,8 +118,51 @@ public class Printer{
     }
 
 ## 18
+    public class ShopService{
+    
+        private static ShopService ss = new ShopService();
+    
+        private ShopService(){
+            
+        }
+        
+        static ShopService getInstance(){
+            return ss;
+        }
+        
+    }
+    
+    public class ShopServiceExample{
+        public static void main(String[] args){
+            ShopService obj1 = ShopService.getInstance();
+            ShopService obj2 = ShopService.getInstance();
+            
+            if(obj1 == obj2){
+                System.out.println("같은 ShopService 객체 입니다.");
+            }
+            else{
+                System.out.println("다른 ShopService 객체 입니다.");
+            }
+        }
+    }
 
 ## 19
+    public class Account {
+
+	    final int MIN_BALANCE = 0;
+	    final int MAX_BALANCE = 1000000;
+	    private int balance;
+
+	    public int getBalance() {
+		    return balance;
+	    }
+
+	    public void setBalance(int balance) {
+		    if (balance >= MIN_BALANCE || balance <= MAX_BALANCE) {
+			    this.balance = balance;
+		    }
+	    }
+    }
 
 ## 20
 
