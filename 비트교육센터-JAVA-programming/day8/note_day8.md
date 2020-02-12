@@ -29,11 +29,20 @@ GUI 껍데기
 
 기존의 os의 도움을 받아서 만듬
 
+컨테이너
+Panel, Frame, Applet, Dialog, Window
+
 ### swing
 JVM 에서 돌아간다
 awt가 os의 도움을 받아야해서 느리고 os에 따라 모양이 다른다
 
 그래서 추가적으로 라이브러리가 만들어졌다.
+
+컨테이너 = 컴포넌트를 담을 수 있는 클래스
+JPanel, JFrame, JApplet, JDialog, JWindow
+
+최상위 컨테이너(독립적으로 pop-up 될 수 있음)
+JFrame, JDialog, JApplet
 
 ## JavaFX
 swing이 너무 무겁기 때문에 모바일에서 사용하기 위해 JavaFX가 최근에 주로 쓰인다.
