@@ -47,6 +47,8 @@ Parent(String nation) call
     }
     
     public Dog implements Soundable{
+    
+        @Override
         String sound(){
             return "멍멍";
         }
@@ -85,7 +87,8 @@ Parent(String nation) call
     
     
     public class MySqlDao implements DataAccessObject{
-    @Override
+    
+        @Override
         void select(){
             System.out.println("MySql DB에서 검색")
         }
