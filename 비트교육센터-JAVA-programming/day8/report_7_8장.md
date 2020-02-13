@@ -17,7 +17,10 @@
 this.name -> super.name 으로 바뀌어야 하다.
 
 ## 6
-???
+Parent(String nation) call
+-> Parent() call
+-> Child(String name) call
+-> Child() call
 
 ## 7
 스노우 타이어가 굴러갑니다.
