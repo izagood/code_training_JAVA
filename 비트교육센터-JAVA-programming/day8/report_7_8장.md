@@ -29,11 +29,83 @@ this.name -> super.name 으로 바뀌어야 하다.
 # 8장
 
 ## 1
+3 : 상수와 추상 메소드만 가질 수 있다.
 
 ## 2
+4 : 업캐스팅 하면 된다.
 
 ## 3
+    public Cat implements Soundable{
+    
+        @Override
+        public String sound(){
+            return "야옹";
+        }        
+    }
+    
+    public Dog implements Soundable{
+        String sound(){
+            return "멍멍";
+        }
+    }
 
 ## 4
+    public interface DataAccessObject{
+        
+        abstract void select();
+        abstract void insert();
+        abstract void update();
+        abstract void delete();
+    }
+    
+    public class OracleDao implements DataAccessObject{
+        
+        @Override
+        void select(){
+            System.out.println("Oracle DB에서 검색")
+        }
+        @Override
+        void insert(){
+            System.out.println("Oracle DB에 삽입")
+        }
+        @Override
+        void update(){
+            System.out.println("Oracle DB를 수정")
+        }
+        @Override
+        void delete(){
+            System.out.println("Oracle DB에서 삭제")
+        }
+        
+    
+    }
+    
+    
+    public class MySqlDao implements DataAccessObject{
+    @Override
+        void select(){
+            System.out.println("MySql DB에서 검색")
+        }
+        @Override
+        void insert(){
+            System.out.println("MySql DB에 삽입")
+        }
+        @Override
+        void update(){
+            System.out.println("MySql DB를 수정")
+        }
+        @Override
+        void delete(){
+            System.out.println("MySql DB에서 삭제")
+        }
+    }
 
 ## 5
+    new Action(){
+    
+        @Override
+        void work(){
+            System.out.print("복사를 합니다.");
+        }
+    
+    };
