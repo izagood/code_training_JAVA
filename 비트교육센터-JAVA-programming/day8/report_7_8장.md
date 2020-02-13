@@ -57,28 +57,28 @@ Parent(String nation) call
 ## 4
     public interface DataAccessObject{
         
-        abstract void select();
-        abstract void insert();
-        abstract void update();
-        abstract void delete();
+        public abstract void select();
+        public abstract void insert();
+        public abstract void update();
+        public abstract void delete();
     }
     
     public class OracleDao implements DataAccessObject{
         
         @Override
-        void select(){
+        public void select(){
             System.out.println("Oracle DB에서 검색")
         }
         @Override
-        void insert(){
+        public void insert(){
             System.out.println("Oracle DB에 삽입")
         }
         @Override
-        void update(){
+        public void update(){
             System.out.println("Oracle DB를 수정")
         }
         @Override
-        void delete(){
+        public void delete(){
             System.out.println("Oracle DB에서 삭제")
         }
         
@@ -89,19 +89,19 @@ Parent(String nation) call
     public class MySqlDao implements DataAccessObject{
     
         @Override
-        void select(){
+        public void select(){
             System.out.println("MySql DB에서 검색")
         }
         @Override
-        void insert(){
+        public void insert(){
             System.out.println("MySql DB에 삽입")
         }
         @Override
-        void update(){
+        public void update(){
             System.out.println("MySql DB를 수정")
         }
         @Override
-        void delete(){
+        public void delete(){
             System.out.println("MySql DB에서 삭제")
         }
     }
@@ -110,8 +110,7 @@ Parent(String nation) call
     new Action(){
     
         @Override
-        void work(){
+        public void work(){
             System.out.print("복사를 합니다.");
         }
-    
     };
