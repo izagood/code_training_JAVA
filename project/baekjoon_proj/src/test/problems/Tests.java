@@ -11,6 +11,8 @@ import baekjoon_proj.problems.stepbystep.no2.Grade_9498;
 import baekjoon_proj.problems.stepbystep.no2.PickQuadrant_14681;
 import baekjoon_proj.problems.stepbystep.no2.TwoNumer_1330;
 import baekjoon_proj.problems.stepbystep.no2.Years4_2753;
+import baekjoon_proj.problems.stepbystep.no6.HanSu_1065;
+import baekjoon_proj.problems.stepbystep.no7.AsciiCode_11654;
 
 public class Tests {
 	@Test
@@ -53,5 +55,19 @@ public class Tests {
 	void pickQuadrant_14681() throws IOException {
 		PickQuadrant_14681 pickQuadrant_14681 = new PickQuadrant_14681();
 		pickQuadrant_14681.pickQuadrant();
+	}
+	
+	@Test
+	@DisplayName("한수")
+	void hanSu_1065() throws IOException {
+		HanSu_1065 hanSu_1065 = new HanSu_1065();
+		hanSu_1065.hanSu();
+	}
+	
+	@Test
+	@DisplayName("아스키 코드")
+	void asciiCode_11654() throws IOException {
+		AsciiCode_11654 asciiCode_11654 = new AsciiCode_11654();
+		asciiCode_11654.ascii();
 	}
 }
