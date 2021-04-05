@@ -11,15 +11,19 @@ import baekjoon_proj.problems.stepbystep.no2.Grade_9498;
 import baekjoon_proj.problems.stepbystep.no2.PickQuadrant_14681;
 import baekjoon_proj.problems.stepbystep.no2.TwoNumer_1330;
 import baekjoon_proj.problems.stepbystep.no2.Years4_2753;
-<<<<<<< HEAD
 import baekjoon_proj.problems.stepbystep.no5.OX_8958;
 import baekjoon_proj.problems.stepbystep.no5.OverAverage_4344;
 import baekjoon_proj.problems.stepbystep.no6.IntegerNSum_15596;
 import baekjoon_proj.problems.stepbystep.no6.SelfNum_4673;
-=======
 import baekjoon_proj.problems.stepbystep.no6.HanSu_1065;
+import baekjoon_proj.problems.stepbystep.no7.Alpabet_10809;
 import baekjoon_proj.problems.stepbystep.no7.AsciiCode_11654;
->>>>>>> 0c064b789acced06146e983e43b19f4b75fac695
+import baekjoon_proj.problems.stepbystep.no7.CroaAlpabet_2941;
+import baekjoon_proj.problems.stepbystep.no7.Dial_5622;
+import baekjoon_proj.problems.stepbystep.no7.SangSu_2908;
+import baekjoon_proj.problems.stepbystep.no7.StringRepetition_2675;
+import baekjoon_proj.problems.stepbystep.no7.WordStudy_1157;
+import baekjoon_proj.problems.stepbystep.no7.WordsNum_1152;
 
 public class Tests {
 	@Test
@@ -65,7 +69,6 @@ public class Tests {
 	}
 	
 	@Test
-<<<<<<< HEAD
 	@DisplayName("OX 퀴즈")
 	void oX_8958() throws IOException {
 		OX_8958 oX_8958 = new OX_8958();
@@ -93,7 +96,9 @@ public class Tests {
 	void selfNum_4673() throws IOException {
 		SelfNum_4673 selfNum_4673 = new SelfNum_4673();
 		selfNum_4673.selfNum(10000);
-=======
+	}
+	
+	@Test
 	@DisplayName("한수")
 	void hanSu_1065() throws IOException {
 		HanSu_1065 hanSu_1065 = new HanSu_1065();
@@ -105,6 +110,54 @@ public class Tests {
 	void asciiCode_11654() throws IOException {
 		AsciiCode_11654 asciiCode_11654 = new AsciiCode_11654();
 		asciiCode_11654.ascii();
->>>>>>> 0c064b789acced06146e983e43b19f4b75fac695
+	}
+	
+	@Test
+	@DisplayName("알파벳 찾기")
+	void alpabet_10809() throws IOException {
+		Alpabet_10809 alpabet_10809 = new Alpabet_10809();
+		alpabet_10809.alpabet();
+	}
+	
+	@Test
+	@DisplayName("문자열 반복")
+	void stringRepetition_2675() throws IOException {
+		StringRepetition_2675 stringRepetition_2675 = new StringRepetition_2675();
+		stringRepetition_2675.repetition();
+	}
+	
+	@Test
+	@DisplayName("단어 공부")
+	void wordStudy_1157() throws IOException {
+		WordStudy_1157 wordStudy_1157 = new WordStudy_1157();
+		wordStudy_1157.study();
+	}
+	
+	@Test
+	@DisplayName("단어의 개수")
+	void wordsNum_1152() throws IOException {
+		WordsNum_1152 wordsNum_1152 = new WordsNum_1152();
+		wordsNum_1152.words();
+	}
+	
+	@Test
+	@DisplayName("상수")
+	void const_2908() throws IOException {
+		SangSu_2908 sangSu_2908 = new SangSu_2908();
+		sangSu_2908.sangSuNum();
+	}
+	
+	@Test
+	@DisplayName("다이얼")
+	void dial_5622() throws IOException {
+		Dial_5622 dial_5622 = new Dial_5622();
+		dial_5622.dial();
+	}
+	
+	@Test
+	@DisplayName("크로아티아 알파벳")
+	void croaAlpabet_2941() throws IOException {
+		CroaAlpabet_2941 croaAlpabet_2941 = new CroaAlpabet_2941();
+		croaAlpabet_2941.cora();
 	}
 }
