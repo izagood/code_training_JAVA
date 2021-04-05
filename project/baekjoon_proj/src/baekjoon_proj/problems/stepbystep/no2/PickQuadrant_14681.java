@@ -1,5 +1,7 @@
 package baekjoon_proj.problems.stepbystep.no2;
 
+import java.util.Scanner;
+
 public class PickQuadrant_14681 {
 	/**
 	 * @문제
@@ -18,6 +20,27 @@ public class PickQuadrant_14681 {
 	 * (−1000 ≤ x ≤ 1000; x ≠ 0) 다음 줄에는 정수 y가 주어진다. (−1000 ≤ y ≤ 1000; y ≠ 0)
 	 */
 	public void pickQuadrant() {
+		Scanner scanner = new Scanner(System.in);
 		
+		int num1 = scanner.nextInt();
+		int num2 = scanner.nextInt();
+		
+		boolean num1Plus = num1 > 0 ? true : false;
+		boolean num1Minus = num1 < 0 ? true : false;
+		boolean num2Plus = num2 > 0 ? true : false;
+		boolean num2Minus = num2 < 0 ? true : false;
+		
+		if(num1Plus && num2Plus) {
+			System.out.println("1");
+		}
+		if(num1Minus && num2Plus) {
+			System.out.println("2");
+		}
+		if(num1Minus && num2Minus) {
+			System.out.println("3");
+		}
+		if(num1Plus && num2Minus) {
+			System.out.println("4");
+		}
 	}
 }
