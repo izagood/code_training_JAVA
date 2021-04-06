@@ -158,6 +158,6 @@ public class Tests {
 	@DisplayName("크로아티아 알파벳")
 	void croaAlpabet_2941() throws IOException {
 		CroaAlpabet_2941 croaAlpabet_2941 = new CroaAlpabet_2941();
-		croaAlpabet_2941.cora();
+		croaAlpabet_2941.cora_regex();
 	}
 }
