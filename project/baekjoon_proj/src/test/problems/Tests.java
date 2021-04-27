@@ -20,6 +20,7 @@ import baekjoon_proj.problems.stepbystep.no7.Alpabet_10809;
 import baekjoon_proj.problems.stepbystep.no7.AsciiCode_11654;
 import baekjoon_proj.problems.stepbystep.no7.CroaAlpabet_2941;
 import baekjoon_proj.problems.stepbystep.no7.Dial_5622;
+import baekjoon_proj.problems.stepbystep.no7.GroupWordCheck_1316;
 import baekjoon_proj.problems.stepbystep.no7.SangSu_2908;
 import baekjoon_proj.problems.stepbystep.no7.StringRepetition_2675;
 import baekjoon_proj.problems.stepbystep.no7.WordStudy_1157;
@@ -159,5 +160,12 @@ public class Tests {
 	void croaAlpabet_2941() throws IOException {
 		CroaAlpabet_2941 croaAlpabet_2941 = new CroaAlpabet_2941();
 		croaAlpabet_2941.cora_regex();
+	}
+	
+	@Test
+	@DisplayName("그룹 단어 체커")
+	void groupWordCheck_1316() throws IOException {
+		GroupWordCheck_1316 groupWordCheck_1316 = new GroupWordCheck_1316();
+		groupWordCheck_1316.check();
 	}
 }

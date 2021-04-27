@@ -15,9 +15,11 @@ public class CroaAlpabet_2941 {
 		int count = 0;
 		String replaceInput = "";
 		for(String croaStr : croaStrArr) {
+			System.out.println(croaStr);
 			Pattern pattern = Pattern.compile(croaStr);
 			Matcher matcher = pattern.matcher(input);
 			replaceInput = matcher.replaceAll(" ");
+			System.out.println(replaceInput);
 			input = replaceInput;
 			
 			for(int i=0; matcher.find(i); i = matcher.end()) {
