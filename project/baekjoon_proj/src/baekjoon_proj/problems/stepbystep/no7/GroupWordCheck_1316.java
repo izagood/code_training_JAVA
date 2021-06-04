@@ -3,19 +3,30 @@ package baekjoon_proj.problems.stepbystep.no7;
 import java.util.Scanner;
 
 public class GroupWordCheck_1316 {
-	
-	// 알파벳이 연속되거나 한번만 나와야 함
+
+	// 그룹 단어의 개수 출력
 	public void check() {
+		int count = 0;
+
 		Scanner scanner = new Scanner(System.in);
-		int num = scanner.nextInt();
-		
-		
-		
-		for(int i = 0; i < num; i++) {
+
+		int wordNum = scanner.nextInt();
+
+		for (int i = 0; i < wordNum; i++) {
 			String word = scanner.next();
-			
+			// 이 word가 그룹단어 인지 판단하고 count 높여야 함.
+
+			char[] charArr = new char[word.length()];
+
+			// if() {
+			// // 그룹 단어 이면
+			// count++;
+			// }
 		}
+
 		scanner.close();
+
+		System.out.println(count);
 	}
 
 }
